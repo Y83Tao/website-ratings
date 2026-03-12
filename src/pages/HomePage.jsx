@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import MediaList from '../components/MediaList'
 import movies from '../data/movies'
 import shows from '../data/shows'
@@ -11,7 +12,8 @@ const TABS = [
 ]
 
 export default function HomePage() {
-  const [activeTab, setActiveTab] = useState('movies')
+  const location = useLocation()
+  const [activeTab, setActiveTab] = useState(location.state?.tab || 'movies')
 
   const dataMap = { movies, shows, games }
 

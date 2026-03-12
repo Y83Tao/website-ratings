@@ -44,7 +44,7 @@ export default function DetailPage() {
 
   return (
     <div className="detail">
-      <button className="back-btn" onClick={() => navigate('/')}>
+      <button className="back-btn" onClick={() => navigate('/', { state: { tab: type } })}>
         &larr; Back
       </button>
 
