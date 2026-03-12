@@ -6,13 +6,20 @@ const STATUS_COLORS = {
   dropped: '#8b4040',
 }
 
+function resolveImage(path) {
+  if (!path) return null
+  if (path.startsWith('http')) return path
+  const base = import.meta.env.BASE_URL
+  return path.startsWith('/') ? base + path.slice(1) : base + path
+}
+
 export default function MediaCard({ item, onClick, showStatus }) {
   return (
     <div className="card" onClick={onClick}>
       <div className="card__image-wrapper">
         <img
           className="card__image"
-          src={item.image || `https://placehold.co/300x450/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`}
+          src={resolveImage(item.image) || `https://placehold.co/300x450/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`}
           alt={item.title}
           loading="lazy"
           onError={(e) => {

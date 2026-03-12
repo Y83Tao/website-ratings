@@ -16,6 +16,13 @@ const TYPE_LABELS = {
   games: 'Game',
 }
 
+function resolveImage(path) {
+  if (!path) return null
+  if (path.startsWith('http')) return path
+  const base = import.meta.env.BASE_URL
+  return path.startsWith('/') ? base + path.slice(1) : base + path
+}
+
 export default function DetailPage() {
   const { type, id } = useParams()
   const navigate = useNavigate()
@@ -44,7 +51,7 @@ export default function DetailPage() {
       <div className="detail__content">
         <div className="detail__poster">
           <img
-            src={item.image || `https://placehold.co/400x600/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`}
+            src={resolveImage(item.image) || `https://placehold.co/400x600/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`}
             alt={item.title}
             onError={(e) => {
               e.target.src = `https://placehold.co/400x600/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`
