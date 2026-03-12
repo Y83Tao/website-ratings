@@ -69,15 +69,6 @@ export default function DetailPage() {
             <span className="detail__rating-label">{item.rating.toFixed(1)} / 10</span>
           </div>
 
-          {item.status && (
-            <span
-              className="detail__status"
-              style={{ backgroundColor: STATUS_COLORS[item.status] }}
-            >
-              {item.status.charAt(0).toUpperCase() + item.status.slice(1)}
-            </span>
-          )}
-
           <div className="detail__review">
             <h2>My Review</h2>
             <p>{item.review}</p>
