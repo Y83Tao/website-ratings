@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import MediaCard from './MediaCard'
 
-const ITEMS_PER_PAGE = 30
+const ITEMS_PER_PAGE = 25
 const SORT_OPTIONS = [
   { value: 'title', label: 'Title' },
   { value: 'rating', label: 'Rating' },
