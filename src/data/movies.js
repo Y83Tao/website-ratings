@@ -19,6 +19,7 @@ const movies = [
   { id: 'terminator-2', title: 'Terminator 2: Judgment Day', year: 1991, rating: 8.5, image: '/terminator-2.jpg', review: '' },
   { id: 'spirited-away', title: 'Spirited Away', year: 2001, rating: 8.5, image: '/spirited-away.jpg', review: '' },
   { id: 'cosmic-princess-kaguya', title: 'Cosmic Princess Kaguya!', year: 2026, rating: 8.5, image: '/cosmic-princess-kaguya.jpg', review: '' },
+  { id: 'ex-machina', title: 'Ex Machina', year: 2014, rating: 8.0, image: '/ex-machina.jpg', review: '' },
   { id: 'arrival', title: 'Arrival', year: 2016, rating: 8.0, image: '/arrival.jpg', review: '' },
   { id: 'wicked', title: 'Wicked', year: 2024, rating: 8.0, image: '/wicked.jpg', review: '' },
   { id: 'everything-everywhere', title: 'Everything Everywhere All at Once', year: 2022, rating: 8.0, image: '/everything-everywhere.jpg', review: '' },

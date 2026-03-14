@@ -35,7 +35,6 @@ const shows = [
   { id: 'the-office', title: 'The Office', year: 2005, rating: 8.0, status: 'completed', image: '/the-office.jpg', review: '' },
   { id: 'black-mirror', title: 'Black Mirror', year: 2011, rating: 8.0, status: 'ongoing', image: '/black-mirror.jpg', review: '' },
   { id: 'red-vs-blue', title: 'Red vs. Blue', year: 2003, rating: 8.0, status: 'completed', image: '/red-vs-blue.jpg', review: '' },
-  { id: 'machinima', title: 'Machinima', year: 2000, rating: 8.0, status: 'completed', image: '/machinima.jpg', review: '' },
   { id: 'the-walking-dead', title: 'The Walking Dead', year: 2010, rating: 8.0, status: 'completed', image: '/the-walking-dead.jpg', review: '' },
   { id: 'the-mandalorian', title: 'The Mandalorian', year: 2019, rating: 8.0, status: 'completed', image: '/the-mandalorian.jpg', review: '' },
   { id: 'star-wars-ahsoka', title: 'Star Wars: Ahsoka', year: 2023, rating: 8.0, status: 'completed', image: '/star-wars-ahsoka.jpg', review: '' },
