@@ -19,6 +19,8 @@ const movies = [
   { id: 'terminator-2', title: 'Terminator 2: Judgment Day', year: 1991, rating: 8.5, image: '/terminator-2.jpg', review: '' },
   { id: 'spirited-away', title: 'Spirited Away', year: 2001, rating: 8.5, image: '/spirited-away.jpg', review: '' },
   { id: 'cosmic-princess-kaguya', title: 'Cosmic Princess Kaguya!', year: 2026, rating: 8.5, image: '/cosmic-princess-kaguya.jpg', review: '' },
+  { id: 'everything-everywhere', title: 'Everything Everywhere All at Once', year: 2022, rating: 8.0, image: '/everything-everywhere.jpg', review: '' },
+  { id: 'the-suicide-squad', title: 'The Suicide Squad', year: 2021, rating: 8.0, image: '/the-suicide-squad.jpg', review: '' },
   { id: 'avengers-endgame', title: 'Avengers: Endgame', year: 2019, rating: 8.0, image: '/avengers-endgame.jpg', review: '' },
   { id: 'the-pursuit-of-happyness', title: 'The Pursuit of Happyness', year: 2006, rating: 8.0, image: '/the-pursuit-of-happyness.jpg', review: '' },
   { id: 'saving-private-ryan', title: 'Saving Private Ryan', year: 1998, rating: 8.0, image: '/ryan.jpg', review: '' },
