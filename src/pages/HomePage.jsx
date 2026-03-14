@@ -14,6 +14,7 @@ const TABS = [
 export default function HomePage() {
   const location = useLocation()
   const [activeTab, setActiveTab] = useState(location.state?.tab || 'movies')
+  const [initialPage, setInitialPage] = useState(location.state?.page || 1)
 
   const dataMap = { movies, shows, games }
 
@@ -28,7 +29,7 @@ export default function HomePage() {
           <button
             key={tab.key}
             className={`tab ${activeTab === tab.key ? 'tab--active' : ''}`}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => { setActiveTab(tab.key); setInitialPage(1); }}
           >
             {tab.label}
           </button>
@@ -39,6 +40,7 @@ export default function HomePage() {
         key={activeTab}
         items={dataMap[activeTab]}
         type={activeTab}
+        initialPage={activeTab === (location.state?.tab) ? initialPage : 1}
       />
     </div>
   )

@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import movies from '../data/movies'
 import shows from '../data/shows'
 import games from '../data/games'
@@ -26,6 +26,8 @@ function resolveImage(path) {
 export default function DetailPage() {
   const { type, id } = useParams()
   const navigate = useNavigate()
+  const location = useLocation()
+  const fromPage = location.state?.page || 1
 
   const dataMap = { movies, shows, games }
   const item = dataMap[type]?.find((entry) => entry.id === id)
@@ -44,7 +46,7 @@ export default function DetailPage() {
 
   return (
     <div className="detail">
-      <button className="back-btn" onClick={() => navigate('/', { state: { tab: type } })}>
+      <button className="back-btn" onClick={() => navigate('/', { state: { tab: type, page: fromPage } })}>
         &larr; Back
       </button>
 

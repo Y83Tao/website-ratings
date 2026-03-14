@@ -16,11 +16,11 @@ const STATUS_OPTIONS = [
   { value: 'dropped', label: 'Dropped' },
 ]
 
-export default function MediaList({ items, type, showStatusFilter }) {
+export default function MediaList({ items, type, showStatusFilter, initialPage }) {
   const [sortBy, setSortBy] = useState('rating')
   const [sortDir, setSortDir] = useState('desc')
   const [statusFilter, setStatusFilter] = useState('all')
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(initialPage || 1)
   const navigate = useNavigate()
 
   const filtered = useMemo(() => {
@@ -106,7 +106,7 @@ export default function MediaList({ items, type, showStatusFilter }) {
           <MediaCard
             key={item.id}
             item={item}
-            onClick={() => navigate(`/${type}/${item.id}`)}
+            onClick={() => navigate(`/${type}/${item.id}`, { state: { tab: type, page: currentPage } })}
             showStatus={showStatusFilter}
           />
         ))}
