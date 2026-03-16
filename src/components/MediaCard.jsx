@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import RatingBadge from './RatingBadge'
 
 const STATUS_COLORS = {
@@ -6,7 +7,7 @@ const STATUS_COLORS = {
   dropped: '#8b4040',
 }
 
-function resolveImage(path) {
+export function resolveImage(path) {
   if (!path) return null
   if (path.startsWith('http')) return path
   const base = import.meta.env.BASE_URL
@@ -14,16 +15,21 @@ function resolveImage(path) {
 }
 
 export default function MediaCard({ item, onClick, showStatus }) {
+  const [loaded, setLoaded] = useState(false)
+
   return (
     <div className="card" onClick={onClick}>
       <div className="card__image-wrapper">
+        {!loaded && <div className="card__shimmer" />}
         <img
-          className="card__image"
+          className={`card__image ${loaded ? 'card__image--loaded' : 'card__image--loading'}`}
           src={resolveImage(item.image) || `https://placehold.co/300x450/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`}
           alt={item.title}
           loading="lazy"
+          onLoad={() => setLoaded(true)}
           onError={(e) => {
             e.target.src = `https://placehold.co/300x450/1a1a2e/e0e0e0?text=${encodeURIComponent(item.title)}`
+            setLoaded(true)
           }}
         />
         <RatingBadge rating={item.rating} />

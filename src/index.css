@@ -251,16 +251,41 @@ button { font-family: inherit; }
   z-index: 1;
 }
 
+.card__shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, var(--bg-surface) 30%, rgba(255,255,255,0.06) 50%, var(--bg-surface) 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), opacity 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), opacity 0.4s ease;
+}
+
+.card__image--loading {
+  opacity: 0 !important;
+}
+
+.card__image--loaded {
+  opacity: 1;
+}
+
+.card:hover .card__image--loaded {
+  opacity: 0.8;
 }
 
 .card:hover .card__image {
   transform: scale(1.05);
-  opacity: 0.8;
 }
 
 .card__status {
