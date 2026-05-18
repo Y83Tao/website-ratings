@@ -8,6 +8,7 @@ const shows = [
   { id: 'star-wars-andor', title: 'Star Wars: Andor', year: 2022, rating: 9.5, status: 'completed', image: '/star-wars-andor.webp', review: '' },
   { id: 'the-penguin', title: 'The Penguin', year: 2024, rating: 9.0, status: 'completed', image: '/the-penguin.webp', review: '' },
   { id: 'cyberpunk-edgerunners', title: 'Cyberpunk: Edgerunners', year: 2022, rating: 9.0, status: 'completed', image: '/cyberpunk.webp', review: '' },
+  { id: 'star-wars-shadow-lord', title: 'Star Wars: Shadow Lord', year: 2026, rating: 9.0, status: 'completed', image: '/star-wars-shadow-lord.webp', review: '' },
   { id: 'breaking-bad', title: 'Breaking Bad', year: 2008, rating: 8.5, status: 'completed', image: '/breaking-bad.webp', review: '' },
   { id: 'better-call-saul', title: 'Better Call Saul', year: 2015, rating: 8.5, status: 'completed', image: '/better-call-saul.webp', review: '' },
   { id: 'the-queens-gambit', title: "The Queen's Gambit", year: 2020, rating: 8.5, status: 'completed', image: '/the-queens-gambit.webp', review: '' },
