@@ -26,6 +26,7 @@ const shows = [
   { id: 'fallout-show', title: 'Fallout', year: 2024, rating: 8.5, status: 'ongoing', image: '/fallout-show.webp', review: '' },
   { id: 'atlanta', title: 'Atlanta', year: 2016, rating: 8.5, status: 'completed', image: '/atlanta.webp', review: '' },
   { id: 'one-piece-la', title: 'One Piece (Live Action)', year: 2023, rating: 8.5, status: 'ongoing', image: '/one-piece-la.webp', review: '' },
+  { id: 'modern-family', title: 'Modern Family', year: 2009, rating: 8.5, status: 'completed', image: '/modern-family.webp', review: '' },
   { id: 'house-of-the-dragon', title: 'House of the Dragon', year: 2022, rating: 8.0, status: 'ongoing', image: '/house-of-the-dragon.webp', review: '' },
   { id: 'narcos', title: 'Narcos', year: 2015, rating: 8.0, status: 'completed', image: '/narcos.webp', review: '' },
   { id: 'invincible', title: 'Invincible', year: 2021, rating: 8.0, status: 'ongoing', image: '/invincible.webp', review: '' },
