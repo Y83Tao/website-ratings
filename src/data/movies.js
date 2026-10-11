@@ -11,6 +11,8 @@ const movies = [
   { id: 'the-shawshank-redemption', title: 'The Shawshank Redemption', year: 1994, rating: 9.0, image: '/the-shawshank-redemption.webp', review: '' },
   { id: 'dune-part-two', title: 'Dune: Part Two', year: 2024, rating: 9.0, image: '/dune-part-two.webp', review: '' },
   { id: 'spider-man-brand-new-day', title: 'Spider-Man: Brand New Day', year: 2026, rating: 9.0, image: '/spider-man-brand-new-day.webp', review: '' },
+  { id: 'soul', title: 'Soul', year: 2020, rating: 8.7, image: '/soul.webp', review: '' },
+  { id: 'inside-out', title: 'Inside Out', year: 2015, rating: 8.7, image: '/inside-out.webp', review: '' },
   { id: 'john-wick-chapter-4', title: 'John Wick: Chapter 4', year: 2023, rating: 8.5, image: '/jw4.webp', review: 'Wicky John 4. A franchise whose main purpose is give your eyes steroids. Pure action, top tier choreography, and badass characters. What also makes this franchise amazing is that even the characters and world are interesting. A world seemingly runned like the mafia, and characters who must interact with this world. I built a home theatre just for this, an eye and eargasm.' },
   { id: 'guardians-of-the-galaxy-vol-3', title: 'Guardians of the Galaxy Vol. 3', year: 2023, rating: 8.5, image: '/guardians-of-the-galaxy-vol-3.webp', review: '' },
   { id: 'django-unchained', title: 'Django Unchained', year: 2012, rating: 8.5, image: '/django-unchained.webp', review: '' },
