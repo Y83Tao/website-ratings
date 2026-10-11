@@ -244,9 +244,15 @@ button { font-family: inherit; }
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 60%;
-  height: 40%;
-  background: radial-gradient(ellipse at bottom right, rgba(0, 0, 0, 0.65) 0%, transparent 70%);
+  width: 70%;
+  height: 45%;
+  background: radial-gradient(
+    ellipse at bottom right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 30%,
+    rgba(0, 0, 0, 0.12) 55%,
+    transparent 75%
+  );
   pointer-events: none;
   z-index: 1;
 }
