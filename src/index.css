@@ -248,10 +248,10 @@ button { font-family: inherit; }
   height: 45%;
   background: radial-gradient(
     ellipse at bottom right,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.4) 30%,
-    rgba(0, 0, 0, 0.12) 55%,
-    transparent 75%
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.7) 30%,
+    rgba(0, 0, 0, 0.3) 55%,
+    transparent 85%
   );
   pointer-events: none;
   z-index: 1;
